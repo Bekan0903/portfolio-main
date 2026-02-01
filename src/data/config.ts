@@ -25,7 +25,7 @@ const config = {
   ],
   author: "Inner circle",
   email: "elshadayela4@gmail.com",
-  site: "https://icwebs.vercel.site",
+  site: "https://icwebs.vercel.app",
 
   // for github stars button
   githubUsername: "Bekan0903",
