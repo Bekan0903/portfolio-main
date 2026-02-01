@@ -1,9 +1,9 @@
 const config = {
-  title: "Inner circle | Full-Stack Developer",
+  title: "Inner circle | Full-Stack Developers",
   description: {
-    long: "Explore the portfolio of Inner circle, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Explore the portfolio of Inner circle, full-stack developers and creative technologists specializing in interactive web experiences, 3D animations, and innovative projects. Discover our latest work, including School management systems, AgroCommerce websites, Hospital management systems, and more. Let's build something amazing together!",
     short:
-      "Discover the portfolio of Inner circle, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Discover the portfolio of Inner circle, full-stack developers creating interactive web experiences and innovative projects.",
   },
   keywords: [
     "Inner circle",
