@@ -25,11 +25,11 @@ const config = {
   ],
   author: "Inner circle",
   email: "elshadayela4@gmail.com",
-  site: "https://nareshkhatri.site",
+  site: "https://icwebs.vercel.site",
 
   // for github stars button
   githubUsername: "Bekan0903",
-  githubRepo: "3d-portfolio",
+  githubRepo: "portfolio-main",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
