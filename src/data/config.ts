@@ -38,6 +38,7 @@ const config = {
     twitter: "https://x.com/dam_too8674",
     linkedin: "https://www.linkedin.com/in/bekan-seifu-8280a9398/",
     instagram: "https://www.instagram.com/inner.circle01/",
+    
     github: "https://github.com/Bekan0903",
   },
 };
