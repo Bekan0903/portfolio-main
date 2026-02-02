@@ -40,7 +40,7 @@ const ContactForm = () => {
         if (!data.success) throw new Error(data.message || "Something went wrong!");
         toast({
           title: "Thank you!",
-        description: "I'll get back to you as soon as possible.",
+        description: "We'll get back to you as soon as possible.",
         variant: "default",
         className: cn("top-0 mx-auto flex fixed md:top-4 md:right-4"),
       });
@@ -100,7 +100,7 @@ const ContactForm = () => {
           onChange={(e) => setMessage(e.target.value)}
         />
         <p className="text-sm text-muted-foreground">
-          I&apos;ll never share your data with anyone else. Pinky promise!
+          We&apos;ll never share your data with anyone else!
         </p>
       </div>
       <Button
