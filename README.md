@@ -1,74 +1,72 @@
-# 🚀 My Portfolio Website
+# 🚀 Our Portfolio Website
 
-Welcome to the repository for my personal portfolio website! This is where I showcase my skills, projects, and a bit of my personality through jaw-dropping 3D animations, slick interactions, and fluid motion. If you're into creative web design, you're in the right place.
+Welcome to the repository for our portfolio website. This repository showcases the projects we built, the technologies we use, and the design and animation work that makes our portfolio stand out.
 
-![Portfolio Preview](https://github.com/Naresh-Khatri/Portfolio/blob/main/public/assets/projects-screenshots/portfolio/landing.png?raw=true)
+![Portfolio Preview](https://github.com/Bekan0903/portfolio-main/blob/main/public/assets/projects-screenshots/portfolio/landing.png?raw=true)
 
-## 🔥 Features
+## 🔥 Highlights
 
-- **3D Animations**: Custom-made interactive keyboard using Spline with skills as keycaps that reveal titles and descriptions on hover.
-- **Slick Interactions**: Powered by GSAP and Framer Motion for smooth animations on scroll, hover, and element reveal.
-- **Space Theme**: Particles on a dark background to simulate a cosmic environment, making the experience out of this world.
-- **Responsive Design**: Fully responsive across all devices to ensure the best user experience.
-- **Innovative Web Design**: Combining creativity with functionality to push the boundaries of modern web design.
+- 3D interactive elements and custom animations
+- Smooth, responsive interactions across devices
+- Space-themed visuals with particle effects
+- Focus on project presentation and case studies
+
+## 🗂️ Projects
+
+Below are the main projects featured in this portfolio. Replace these entries with your actual project names, links, and short descriptions.
+
+- Portfolio Website
+  - A single-page portfolio with 3D Spline models, GSAP/Framer Motion animations, and responsive layouts.
+  - Screenshot: public/assets/projects-screenshots/portfolio/landing.png
+- Project A (Example)
+  - Web app demonstrating real-time features and interactive UI.
+  - Tech: Next.js, Socket.io, Tailwind CSS
+- Project B (Example)
+  - Data-driven project with charts and filters, showcasing UX-focused dashboards.
+  - Tech: React, D3.js, Zod
+- Project C (Example)
+  - Creative experimental UI with custom animations and accessibility considerations.
+  - Tech: Spline, Framer Motion
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Next.js, React, Tailwind CSS, Shadcn, Aceternity UI
-- **Animations**: GSAP, Framer Motion, Spline Runtime
-- **Misc**: Resend, Socketio, Zod
+- Frontend: Next.js, React, Tailwind CSS, Shadcn, Aceternity UI
+- Animations: GSAP, Framer Motion, Spline Runtime
+- Misc: Resend, Socket.io, Zod
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- Node.js (v14+)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/Naresh-Khatri/Portfolio.git
-    ```
-
-2. Navigate to the project directory:
-
-    ```bash
-    cd Portfolio
-    ```
-
-3. Install dependencies:
-
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
-
-4. Run the development server:
-
-    ```bash
-    npm run dev
-    # or
-    yarn dev
-    ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the magic!
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Bekan0903/portfolio-main
+   cd Portfolio
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. Run locally:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+4. Open http://localhost:3000
 
 ## 🚀 Deployment
 
-This site is deployed on Vercel. For your own deployment, follow these steps:
+This site is deployed on Vercel. To deploy your own copy:
 
-1. Push your code to a GitHub repository.
-2. Connect your repository to Vercel.
-3. Vercel will handle the deployment process.
+1. Push to a GitHub repo.
+2. Connect the repo to Vercel.
+3. Configure environment variables if needed and deploy.
 
 ## 🤝 Contributing
 
-If you'd like to contribute or suggest improvements, feel free to open an issue or submit a pull request. All contributions are welcome!
+Contributions are welcome. Please open issues or PRs to suggest improvements or add projects.
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is available under the MIT License.
