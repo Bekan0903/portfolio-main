@@ -236,9 +236,9 @@ export type Project = {
 };
 const projects: Project[] = [
   {
-    id: "codingducks",
-    category: "Coding platform",
-    title: "Coding Ducks",
+    id: "Digital ID",
+    category: "School ID platform",
+    title: "IDkoo digital ID",
     src: "/assets/projects-screenshots/codingducks/landing.png",
     screenshots: ["landing.png"],
     skills: {
@@ -258,68 +258,36 @@ const projects: Project[] = [
         PROJECT_SKILLS.sockerio,
       ],
     },
-    live: "https://www.codingducks.xyz/",
-    github: "https://github.com/Naresh-Khatri/Coding-Ducks",
+    live: "https://bekan.pythonanywhere.com/",
+    github: "https://github.com/Bekan0903/school_ID",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            Coding ducks = LeetCode + CodePen + CSS Battles
+            IDkoo = digitalization + safety + accountability
           </TypographyP>
           <TypographyP className="font-mono ">
-            Coding Ducks is your coding dojo — where you level up your skills,
-            battle in real-time code duels, and earn badges like a true code
-            warrior. Track your progress, flex your brain, and climb the
-            leaderboard. Ready to quack the code?
+The Digital School ID System allows students to register 
+and receive a unique digital ID containing their personal 
+and academic information.Each ID is linked to a QR code 
+that can be scanned by authorized staff to instantly retrieve student records.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Ducklets</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">About IDkoo</TypographyH3>
           <p className="font-mono mb-2">
-            Collaborate in real-time with others in a multiplayer coding
-            environment, just like CodePen but with a social twist.
+The platform is built to improve:
+
+Student identification
+Library management
+Entry and exit tracking
+Overall administrative efficiency
+
           </p>
           <SlideShow
             images={[
               `${BASE_PATH}/codingducks/ducklets.png`,
               `${BASE_PATH}/codingducks/ducklet1.png`,
               `${BASE_PATH}/codingducks/ducklet2.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">UI Battles </TypographyH3>
-
-          <p className="font-mono mb-2">
-            Challenge yourself to create UI components with HTML/CSS/JS, and get
-            instant feedback with an automated similarity scoring.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/codingducks/css-battles.png`,
-              `${BASE_PATH}/codingducks/css-battle.png`,
-              `${BASE_PATH}/codingducks/css-battle2.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Contests </TypographyH3>
-          <p className="font-mono mb-2">
-            Organize or participate in coding competitions. Successfully used to
-            host three contests during college.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/codingducks/contests.png`]} />
-          <TypographyH3 className="my-4 mt-8">Playground </TypographyH3>
-          <p className="font-mono mb-2">
-            Test and execute your code instantly in my versatile online code
-            runner.
-          </p>
-          <SlideShow images={[`${BASE_PATH}/codingducks/playground.png`]} />
-          <TypographyH3 className="my-4 mt-8">Users</TypographyH3>
-
-          <p className="font-mono mb-2">
-            Track your progress, earn badges, and climb the rankings with
-            detailed user profiles and activity tracking.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/codingducks/users.png`,
-              `${BASE_PATH}/codingducks/user.png`,
             ]}
           />
         </div>
