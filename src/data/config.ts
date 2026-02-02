@@ -24,7 +24,7 @@ const config = {
     "Framer Motion",
   ],
   author: "Inner circle",
-  email: "elshadayela4@gmail.com",
+  email: "dam09031@gmail.com",
   site: "https://icwebs.vercel.app",
 
   // for github stars button
