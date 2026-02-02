@@ -1,5 +1,5 @@
 "use client";
-import { Check, ChevronRight, Loader2 } from "lucide-react";
+import { ChevronRight, Loader2 } from "lucide-react";
 import React from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/ace-input";
@@ -22,12 +22,13 @@ const ContactForm = () => {
       e.preventDefault();
       setLoading(true);
       try {
-        const res = await fetch("/api/send", {
+        const res = await fetch("https://api.web3forms.com/submit", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
+            access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
             name: fullName,
             email: email,
             message: message,
@@ -92,14 +93,14 @@ const ContactForm = () => {
       <div className="grid w-full gap-1.5 mb-4">
         <Label htmlFor="content">Your Message</Label>
         <Textarea
-          placeholder="Tell me about about your project,"
+          placeholder="Tell me about your project,"
           id="content"
           required
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
         <p className="text-sm text-muted-foreground">
-          I&apos;ll never share your data with anyone else.
+          I&apos;ll never share your data with anyone else. Pinky promise!
         </p>
       </div>
       <Button
