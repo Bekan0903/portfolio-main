@@ -22,13 +22,12 @@ const ContactForm = () => {
       e.preventDefault();
       setLoading(true);
       try {
-        const res = await fetch("https://api.web3forms.com/submit", {
+        const res = await fetch("/api/send", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
             name: fullName,
             email: email,
             message: message,
