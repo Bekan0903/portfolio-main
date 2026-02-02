@@ -273,17 +273,6 @@ const projects: Project[] = [
             leaderboard. Ready to quack the code?
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Problems </TypographyH3>
-          <p className="font-mono mb-2">
-            Solve coding problems similar to LeetCode, enhancing your
-            problem-solving skills across various languages.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/codingducks/problems.png`,
-              `${BASE_PATH}/codingducks/problem.png`,
-            ]}
-          />
           <TypographyH3 className="my-4 mt-8">Ducklets</TypographyH3>
           <p className="font-mono mb-2">
             Collaborate in real-time with others in a multiplayer coding
