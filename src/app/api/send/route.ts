@@ -1,44 +1,46 @@
-import { EmailTemplate } from "@/components/email-template";
-import { config } from "@/data/config";
-import { Resend } from "resend";
 import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const WEB3FORMS_ACCESS_KEY = process.env.WEB3FORMS_ACCESS_KEY;
 
 const Email = z.object({
   fullName: z.string().min(2, "Full name is invalid!"),
   email: z.string().email({ message: "Email is invalid!" }),
   message: z.string().min(10, "Message is too short!"),
 });
+
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-    console.log(body);
-    const {
-      success: zodSuccess,
-      data: zodData,
-      error: zodError,
-    } = Email.safeParse(body);
-    if (!zodSuccess)
-      return Response.json({ error: zodError?.message }, { status: 400 });
-
-    const { data: resendData, error: resendError } = await resend.emails.send({
-      from: "Porfolio <onboarding@resend.dev>",
-      to: [config.email],
-      subject: "Contact me from portfolio",
-      react: EmailTemplate({
-        fullName: zodData.fullName,
-        email: zodData.email,
-        message: zodData.message,
-      }),
-    });
-
-    if (resendError) {
-      return Response.json({ resendError }, { status: 500 });
+    if (!WEB3FORMS_ACCESS_KEY) {
+      return Response.json({ error: "Missing WEB3FORMS_ACCESS_KEY" }, { status: 500 });
     }
 
-    return Response.json(resendData);
-  } catch (error) {
-    return Response.json({ error }, { status: 500 });
+    const body = await req.json();
+    const parsed = Email.safeParse(body);
+    if (!parsed.success) {
+      return Response.json({ error: parsed.error?.message }, { status: 400 });
+    }
+    const data = parsed.data;
+
+    const payload = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: "Contact me from portfolio",
+      name: data.fullName,
+      email: data.email,
+      message: data.message,
+    };
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    const json = await res.json();
+    if (!res.ok) {
+      return Response.json({ error: json }, { status: res.status });
+    }
+    return Response.json(json);
+  } catch (err: any) {
+    return Response.json({ error: err?.message ?? err }, { status: 500 });
   }
 }
