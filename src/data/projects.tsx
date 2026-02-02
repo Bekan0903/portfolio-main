@@ -277,10 +277,10 @@ that can be scanned by authorized staff to instantly retrieve student records.
           <p className="font-mono mb-2">
 The platform is built to improve:
 
-Student identification
-Library management
-Entry and exit tracking
-Overall administrative efficiency
+Student identification,
+Library management,
+Entry and exit tracking,
+Overall administrative efficiency,
 
           </p>
           <SlideShow
